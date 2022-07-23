@@ -3,19 +3,33 @@
     padding-left: 0;
     margin-bottom: 0;
     margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
      
     &__list {
-    width: 270px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    }
+
+ @media screen and (min-width: 1200px) {
+     width: calc((100% - 90px) / 4);
+ }
+
+
     }
 
     &__title {
     
     @include fonts(null, 14px, 1.14, 0.03em);
     text-transform: uppercase;
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 10px;
-        
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+    text-align: left;
+    }    
     }
 
     &__text {
@@ -29,10 +43,10 @@
 
 
 
-.gap:not(:last-child) {
+// .gap:not(:last-child) {
   
-    margin-right: 30px;
-}
+//     margin-right: 30px;
+// }
 
 
 .pictogramms {
