@@ -12,7 +12,16 @@
 
 &__team {
     background-color: var(--white-bg-color);
+    --items: 1;
+
+    @media screen and (min-width: 768px) {
+    --items: 2;
+    }
+
+ @media screen and (min-width: 1200px) {
     --items: 4;
+ }
+
    }
 
    &__title {
@@ -31,8 +40,8 @@
 .our-team
 {
     text-align: center;
-
     @include fonts(700, 28px, 1.18, 0.03em);
+    
     @media screen and (min-width: 1200px) {
     @include fonts(700, 36px, 1.17, 0.03em);}
 }
@@ -40,7 +49,7 @@
 .team__item
 {
 @include fonts(500, 16px, 1.19, 0.03em);
-width: 270px;
+width: 100%;
 text-align: center;
 margin-bottom: 10px;
 }
@@ -49,7 +58,7 @@ margin-bottom: 10px;
 {
     @include fonts(400, 16px, 1.19, 0.03em);
     color: var(--gray-txt-color);
-    width: 270px;
+    width: 100%;
     text-align: center;
     margin-bottom: 16px;
     
@@ -74,18 +83,3 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
 }
 
 
-.subscribe-input {
-    width: 358px;
-    padding-left: 16px;
-    padding-top: 15px;
-    padding-bottom: 13px;
-    margin: 0;
-    @include fonts(400, 16px, 1.25, 0.03em);
-    align-items: center;
-    background-color: var(--darkness-bg-color);
-    color: rgba(255, 255, 255, 0.6);
-
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-}
