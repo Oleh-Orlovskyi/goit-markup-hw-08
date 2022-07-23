@@ -831,7 +831,13 @@ textarea {
 }
 
 .section-about {
+  display: none;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 1200px) {
+  .section-about {
+    display: block;
+  }
 }
 .section-about__job {
   position: relative;
