@@ -1,0 +1,78 @@
+
+.team
+{
+   background-color: var(--whitness-bg-color);
+   padding-top: 94px;
+   padding-bottom: 94px;
+
+&__team {
+    background-color: var(--white-bg-color);
+    --items: 4;
+
+    }
+
+   &__title {
+    margin-bottom: 50px;
+    }
+     
+}
+
+
+.our-team
+{
+    text-align: center;
+    @include fonts(700, 36px, 1.17, 0.03em);
+}
+
+.team__item
+{
+@include fonts(500, 16px, 1.19, 0.03em);
+width: 270px;
+text-align: center;
+margin-bottom: 10px;
+}
+
+.team__prof
+{
+    @include fonts(400, 16px, 1.19, 0.03em);
+    color: var(--gray-txt-color);
+    width: 270px;
+    text-align: center;
+    margin-bottom: 16px;
+    
+}
+
+
+.team__subscribe {
+padding-top: 30px;
+padding-bottom: 30px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.subscribe-label {
+    display: inline-block;
+    @include fonts(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+
+
+}
+
+
+.subscribe-input {
+    width: 358px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    margin: 0;
+    @include fonts(400, 16px, 1.25, 0.03em);
+    align-items: center;
+    background-color: var(--darkness-bg-color);
+    color: rgba(255, 255, 255, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}

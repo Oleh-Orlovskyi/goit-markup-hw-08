@@ -1,0 +1,200 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    background-color: var(--white-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    }
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-8px, 18px);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--white-bg-color);
+    transition: fill var(--anim);
+
+    &:hover,
+    &:focus {
+    fill: var(--blue-fill-color);}
+    }
+
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    transition: opacity var(--anim), visibility var(--anim);
+    background-color: rgba(0, 0, 0, 0.1);
+    }
+
+
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    }
+
+textarea {
+    resize: none;
+    }
+    
+    .form {
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .form-fields {
+    margin-bottom: 10px;
+    position: relative;
+    
+    &-check  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+       
+    }
+       
+    & input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    }
+    }
+    
+    
+ 
+    .placeholder {
+    margin-bottom: 20px;
+        
+    }
+    
+    
+    
+    .form-input {
+    display: block;
+    margin-top: 4px;
+    transition: border-color var(--anim);
+
+    &-check:checked+.border-check {
+    fill: var(--blue-fill-color);
+    background-color: var(--blue-bg-color);
+    margin-right: 7px;
+    width: 16px;
+    outline: 1px solid var(--blue-bg-color);
+    outline-offset: -2px;
+    border-radius: 2px;
+    transition: background-color var(--anim);
+
+    }
+
+
+    }
+    
+    
+    .textarea {
+    height: 120px;
+    padding: 12px 16px;
+    }
+
+
+     
+    
+    .icon-input {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    display: inline-block;
+    transition: fill var(--anim);
+    }
+    
+    
+    
+    .form-fields textarea {
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    }
+    
+    .icon-agree {
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+       
+    }
+
+
+    .icon-rect {
+    position: absolute;
+    }
+    
+
+    .form-label {
+    display: block;
+    @include fonts(400, 12px, 1.17, 0.01em);
+    color: var(--gray-txt-color);
+    
+    &-check {
+    @include fonts(400, 14px, 1.71, 0.03em);
+    display: flex;
+    color: var(--gray-txt-color);
+    align-items: center;
+    
+    }
+    
+    }
+    
+   
+
+    .form-fields input:hover,
+    .form-fields input:focus {
+    border-color: var(--blue-bg-color);
+    outline: none;
+    }
+        
+    .form-fields textarea:hover,
+    .form-fields textarea:focus {
+    border-color: var(--blue-fill-color);
+    outline: none;
+    }
+        
+    .form-fields:hover .icon-input,
+    .form-fields:focus-within .icon-input {
+    fill: var(--blue-fill-color);
+    }
+
+    .policy {
+    @include fonts(400, 14px, 1.71, 0.03em);
+    text-decoration-line: underline;
+    color: var(--blue-txt-color);
+    cursor: pointer;
+    margin-left: 3px;
+    }

@@ -1,0 +1,49 @@
+.benefits
+{
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+     
+    &__list {
+    width: 270px;
+    }
+
+    &__title {
+    
+    @include fonts(null, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+        
+    }
+
+    &__text {
+   
+    @include fonts(400, 14px, 1.71, 0.03em);
+    text-transform: none;
+    color: var(--gray-txt-color);
+    
+    }
+}
+
+
+
+.gap:not(:last-child) {
+  
+    margin-right: 30px;
+}
+
+
+.pictogramms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: var(--whitness-bg-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+
+

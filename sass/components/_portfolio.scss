@@ -1,0 +1,62 @@
+.port-list
+{
+   
+justify-content: center;
+min-width: 611px;
+padding-left: 0;
+padding-right: 0;
+margin-bottom: 50px;
+margin-top: 0;
+  
+}
+
+.portfolio-item {
+    
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+--items: 9;
+margin-left: 8px;
+    
+}
+
+
+.border 
+{
+border-left: 1px solid #EEEEEE;
+border-right: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;
+padding: 20px 24px;
+
+}
+
+.portfolio-link {
+text-decoration: none;
+
+}
+
+.portfolio-bg {
+    background-color: var(--white-bg-color);
+    transition: color var(--anim), background-color var(--anim), box-shadow var(--anim);
+
+    &:hover,
+    &:focus {
+
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    }
+
+}
+
+.projects {
+    @include fonts(700, 18px, 2.0, 0.06em);
+    margin-bottom: 4px;
+    color: var(--dark-txt-color);
+
+}
+
+.project-type {
+    @include fonts(400, 16px, 1.88, 0.03em);
+    color: var(--gray-txt-color);
+
+}

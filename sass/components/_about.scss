@@ -1,0 +1,36 @@
+.section-about {
+    padding-bottom: 94px;
+
+&__job {
+        position: relative;
+    }
+
+    &__title {
+      
+        text-align: center;
+        @include fonts(700,14px,1.14,0.03em);
+
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: rgba(47, 48, 58, 0.8);
+
+        padding-top: 27px;
+        padding-bottom: 27px;
+
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+}
+
+.about {
+    
+    text-align: center;
+    background-color: var(--white-bg-color);
+    @include fonts(null, 36px, 1.17, 0.03em);
+    &-text {
+            margin-bottom: 50px;
+        }
+
+}

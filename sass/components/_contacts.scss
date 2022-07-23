@@ -1,0 +1,29 @@
+.contacts {
+    color: var(--gray-txt-color);
+    
+    @include fonts(500, 14px, 1.14, 0.02em);
+    text-decoration: none;
+    transition: color var(--anim);
+
+    &:hover,
+    &:focus {
+    color: var(--blue-txt-color);
+    
+    }
+
+    &:hover .mail,
+    &:focus .mail {
+    color: var(--blue-txt-color);
+    fill: var(--blue-fill-color);
+    }
+        
+    &:hover .tel,
+    &:focus .tel {
+    color: var(--blue-txt-color);
+    fill: var(--blue-fill-color);
+    }
+}
+
+
+
+

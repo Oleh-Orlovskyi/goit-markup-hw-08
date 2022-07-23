@@ -1,0 +1,84 @@
+.footer-union {
+display: flex;
+  
+}
+
+
+.footer-bg
+{
+    
+padding-bottom: 60px;
+padding-top: 60px;
+background-color:var(--darkness-bg-color)
+  
+}
+
+.footer-item:not(:last-child) {
+margin-bottom: 9px;
+}
+
+
+.smi-footer {
+fill: #ffffff;
+}
+
+.footer-contacts-mail, .footer-contacts-tel
+
+{
+    
+@include fonts(400, 14px, 1.71, 0.03em);
+color: var(--whitness-txt-color);
+font-style: normal;
+list-style: none;
+}
+
+.logo-footer
+{
+font-family: 'Raleway';
+color: var(--blue-txt-color);
+@include fonts(700, 26px, 1.19, 0.03em);
+text-decoration: none;
+word-spacing: -0.29em;
+}
+
+
+
+.logo-footer-part-2 
+{
+color: var(--white-txt-color);
+       
+}
+
+
+.points  {
+
+display: block;
+padding-left: 0;
+width: 231px;
+margin-top: 20px;
+margin-bottom: 0;  
+        
+}
+
+.address-style
+{
+color: var(--white-txt-color);
+@include fonts(400, 14px, 1.71, 0.03em);
+text-decoration: none;
+margin-left: 0;;
+list-style: none;
+transition: color var(--anim);
+font-style: normal;
+    
+&:hover,
+&:focus {
+color: var(--blue-txt-color);
+      
+}
+}
+
+.footer-subscribe {
+margin-left: 93px;
+padding-top: 8px;
+
+}
