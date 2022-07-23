@@ -2,17 +2,27 @@
 .team
 {
    background-color: var(--whitness-bg-color);
-   padding-top: 94px;
-   padding-bottom: 94px;
+   padding-top: 60px;
+   padding-bottom: 60px;
+
+@media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 &__team {
     background-color: var(--white-bg-color);
     --items: 4;
+   }
+
+   &__title {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
 
     }
 
-   &__title {
-    margin-bottom: 50px;
     }
      
 }
@@ -21,7 +31,10 @@
 .our-team
 {
     text-align: center;
-    @include fonts(700, 36px, 1.17, 0.03em);
+
+    @include fonts(700, 28px, 1.18, 0.03em);
+    @media screen and (min-width: 1200px) {
+    @include fonts(700, 36px, 1.17, 0.03em);}
 }
 
 .team__item
