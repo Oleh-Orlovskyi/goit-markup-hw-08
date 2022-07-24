@@ -1,7 +1,6 @@
 .port-list {
 
-    justify-content: center;
-    // min-width: 611px;
+   
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 40px;
@@ -11,13 +10,12 @@
     justify-content: left;
    
     @media screen and (min-width: 768px) {
-            --items: 2;
+            
             margin-bottom: 30px;
             justify-content: center;
         }
     
         @media screen and (min-width: 1200px) {
-            --items: 3;
             margin-bottom: 50px;
             justify-content: center;
         }
@@ -29,7 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    // --items: 9;
+   
    
     
   
@@ -54,6 +52,10 @@ margin-bottom: 15px;
 margin-right: 8px;
 }
 
+.portfolio {
+    justify-content: left;
+}
+
 .border {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
@@ -61,6 +63,17 @@ margin-right: 8px;
     padding: 20px 24px;
 
 }
+
+.kriak {
+@media screen and (min-width: 768px) {
+    padding-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+    }
+}
+
 
 .portfolio-link {
     text-decoration: none;
@@ -76,7 +89,8 @@ margin-right: 8px;
     --items: 1;
    
     @media screen and (min-width: 768px) {
-            --items: 2;
+        --items: 2;
+        justify-content: left;
         }
     
         @media screen and (min-width: 1200px) {
