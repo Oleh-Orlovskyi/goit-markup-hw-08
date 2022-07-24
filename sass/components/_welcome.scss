@@ -14,6 +14,14 @@
 }
     
     
-    
+    .welcome-title {
+
+    display: flex;
+    align-items: center;
+    color: var(--white-txt-color);
+    text-transform: uppercase;
+    @include fonts(700, 14px, 1.14, 0.03em);
+
+}
     
     

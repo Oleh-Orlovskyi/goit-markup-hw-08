@@ -198,3 +198,11 @@ textarea {
     cursor: pointer;
     margin-left: 3px;
     }
+
+    .strong-title {
+
+    margin-bottom: 12px;
+    @include fonts(700, 20px, 1.15, 0.03em);
+    text-align: center;
+    color: var(--dark-txt-color);
+}
