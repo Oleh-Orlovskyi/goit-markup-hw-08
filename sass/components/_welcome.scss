@@ -1,15 +1,24 @@
 .welcome {
-    min-width: 206px;
-    padding-top: 12px;
+    
+    text-align: center;
+    margin-bottom: 60px;
     color: var(--white-fill-color);
-    margin-left: 70px;
+   
+
+
+
+@media screen and (min-width: 1200px) {
+    padding-top: 12px;
+   
+    min-width: 206px;
+}
 
     &-list {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin: 0;
     padding-left: 0;
-    margin-bottom: 0;
+    
     }
 }
     
@@ -17,11 +26,15 @@
     .welcome-title {
 
     display: flex;
-    align-items: center;
+    justify-content: center;
     color: var(--white-txt-color);
     text-transform: uppercase;
     @include fonts(700, 14px, 1.14, 0.03em);
+    margin-bottom: 20px;
 
+    @media screen and (min-width: 768px) {
+        padding-top: 10px;
+    }
 }
     
     

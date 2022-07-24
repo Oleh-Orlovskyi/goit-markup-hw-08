@@ -1,8 +1,10 @@
 .footer-union {
-display: flex;
-  
-}
+text-align: center;
 
+@media screen and (min-width: 1200px) {
+display: flex;
+}
+}
 
 .footer-bg
 {
@@ -13,8 +15,16 @@ background-color:var(--darkness-bg-color)
   
 }
 
+.footer-item {
+    text-align: center;
+}
+
 .footer-item:not(:last-child) {
-margin-bottom: 9px;
+margin-bottom: 8px;
+
+@media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+    }
 }
 
 
@@ -42,7 +52,6 @@ word-spacing: -0.29em;
 }
 
 
-
 .logo-footer-part-2 
 {
 color: var(--white-txt-color);
@@ -54,9 +63,8 @@ color: var(--white-txt-color);
 
 display: block;
 padding-left: 0;
-width: 231px;
 margin-top: 20px;
-margin-bottom: 0;  
+margin-bottom: 60px;  
         
 }
 
@@ -78,23 +86,63 @@ color: var(--blue-txt-color);
 }
 
 .footer-subscribe {
-margin-left: 93px;
-padding-top: 8px;
+
+@media screen and (min-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+@media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    padding-top: 8px;
+    
+}
 
 }
 
 .subscribe-input {
-    width: 358px;
+    width: 100%;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 13px;
     margin: 0;
+    margin-bottom: 20px;
     @include fonts(400, 16px, 1.25, 0.03em);
     align-items: center;
     background-color: var(--darkness-bg-color);
     color: rgba(255, 255, 255, 0.6);
 
     border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+@media screen and (min-width: 768px) {}
+max-width: 450px;
+
+@media screen and (min-width: 1200px) {}
+
+max-width: 358px;
+
 }
+
+.union {
+@media screen and (min-width: 768px) {
+    display: flex;
+    justify-content:center;
+
+@media screen and (min-width: 1200px) {
+    display: flex;
+}
+    
+}
+}
+
+.footer-address {
+    @media screen and (min-width: 768px) {
+        margin-right: 165px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        margin-right: 70px;}
+    }

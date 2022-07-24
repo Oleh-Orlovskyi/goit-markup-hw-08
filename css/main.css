@@ -153,7 +153,6 @@ img {
 }
 
 .footer-subscribe-btn {
-  margin-left: 8px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -164,11 +163,18 @@ img {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding-top: 8px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   cursor: pointer;
   border: none;
   width: 200px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-btn {
+    margin-left: 8px;
+  }
 }
 .footer-subscribe-btn::after {
   content: "";
@@ -1055,9 +1061,14 @@ textarea {
 }
 
 .footer-union {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-union {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer-bg {
@@ -1066,8 +1077,17 @@ textarea {
   background-color: var(--darkness-bg-color);
 }
 
+.footer-item {
+  text-align: center;
+}
+
 .footer-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .smi-footer {
@@ -1102,9 +1122,8 @@ textarea {
 .points {
   display: block;
   padding-left: 0;
-  width: 231px;
   margin-top: 20px;
-  margin-bottom: 0;
+  margin-bottom: 60px;
 }
 
 .address-style {
@@ -1124,17 +1143,37 @@ textarea {
   color: var(--blue-txt-color);
 }
 
-.footer-subscribe {
-  margin-left: 93px;
-  padding-top: 8px;
+@media screen and (min-width: 768px) {
+  .footer-subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    margin-left: 93px;
+    padding-top: 8px;
+  }
 }
 
 .subscribe-input {
-  width: 358px;
+  width: 100%;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 13px;
   margin: 0;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -1145,16 +1184,49 @@ textarea {
   background-color: var(--darkness-bg-color);
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  max-width: 450px;
+  max-width: 358px;
+}
+@media screen and (min-width: 768px) {
+  .union {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .union {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-address {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-address {
+    margin-right: 70px;
+  }
 }
 
 .welcome {
-  min-width: 206px;
-  padding-top: 12px;
+  text-align: center;
+  margin-bottom: 60px;
   color: var(--white-fill-color);
-  margin-left: 70px;
+}
+@media screen and (min-width: 1200px) {
+  .welcome {
+    padding-top: 12px;
+    min-width: 206px;
+  }
 }
 .welcome-list {
   display: -webkit-box;
@@ -1163,24 +1235,29 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
+  margin: 0;
   padding-left: 0;
-  margin-bottom: 0;
 }
 
 .welcome-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--white-txt-color);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .welcome-title {
+    padding-top: 10px;
+  }
 }
 
 .port-list {
