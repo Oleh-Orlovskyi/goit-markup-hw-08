@@ -1,103 +1,106 @@
 .footer-union {
-text-align: center;
+    text-align: center;
 
-@media screen and (min-width: 1200px) {
-display: flex;
-}
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        text-align: left;
+    }
 }
 
-.footer-bg
-{
-    
-padding-bottom: 60px;
-padding-top: 60px;
-background-color:var(--darkness-bg-color)
-  
+.footer-bg {
+
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: var(--darkness-bg-color)
 }
 
 .footer-item {
     text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer-item:not(:last-child) {
-margin-bottom: 8px;
+    margin-bottom: 8px;
 
-@media screen and (min-width: 1200px) {
-    margin-bottom: 9px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
     }
 }
 
 
 .smi-footer {
-fill: #ffffff;
+    fill: #ffffff;
 }
 
-.footer-contacts-mail, .footer-contacts-tel
+.footer-contacts-mail,
+.footer-contacts-tel {
 
-{
-    
-@include fonts(400, 14px, 1.71, 0.03em);
-color: var(--whitness-txt-color);
-font-style: normal;
-list-style: none;
+    @include fonts(400, 14px, 1.71, 0.03em);
+    color: var(--whitness-txt-color);
+    font-style: normal;
+    list-style: none;
 }
 
-.logo-footer
-{
-font-family: 'Raleway';
-color: var(--blue-txt-color);
-@include fonts(700, 26px, 1.19, 0.03em);
-text-decoration: none;
-word-spacing: -0.29em;
-}
-
-
-.logo-footer-part-2 
-{
-color: var(--white-txt-color);
-       
+.logo-footer {
+    font-family: 'Raleway';
+    color: var(--blue-txt-color);
+    @include fonts(700, 26px, 1.19, 0.03em);
+    text-decoration: none;
+    word-spacing: -0.29em;
 }
 
 
-.points  {
+.logo-footer-part-2 {
+    color: var(--white-txt-color);
 
-display: block;
-padding-left: 0;
-margin-top: 20px;
-margin-bottom: 60px;  
-        
 }
 
-.address-style
-{
-color: var(--white-txt-color);
-@include fonts(400, 14px, 1.71, 0.03em);
-text-decoration: none;
-margin-left: 0;;
-list-style: none;
-transition: color var(--anim);
-font-style: normal;
-    
-&:hover,
-&:focus {
-color: var(--blue-txt-color);
-      
+
+.points {
+
+    display: block;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 60px;
+
 }
+
+.address-style {
+    color: var(--white-txt-color);
+    @include fonts(400, 14px, 1.71, 0.03em);
+    text-decoration: none;
+    margin-left: 0;
+    ;
+    list-style: none;
+    transition: color var(--anim);
+    font-style: normal;
+
+    &:hover,
+    &:focus {
+        color: var(--blue-txt-color);
+
+    }
 }
 
 .footer-subscribe {
 
-@media screen and (min-width: 768px) {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;}
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-@media screen and (min-width: 1200px) {
-    margin-left: 93px;
-    padding-top: 8px;
-    
-}
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+        // padding-top: 8px;
+        align-items: flex-start;
+        width: 570px;
+        padding-top: 0;
+
+    }
 
 }
 
@@ -117,32 +120,43 @@ align-items: center;}
     // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 
-@media screen and (min-width: 768px) {}
-max-width: 450px;
+    @media screen and (min-width: 768px) {
 
-@media screen and (min-width: 1200px) {}
+    max-width: 450px;}
 
-max-width: 358px;
+    @media screen and (min-width: 1200px) {
+
+    width: 358px;}
 
 }
 
 .union {
-@media screen and (min-width: 768px) {
-    display: flex;
-    justify-content:center;
-
-@media screen and (min-width: 1200px) {
-    display: flex;
-}
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
     
-}
+    }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+
+    
 }
 
 .footer-address {
     @media screen and (min-width: 768px) {
         margin-right: 165px;
     }
-    
-    @media screen and (min-width: 768px) {
-        margin-right: 70px;}
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
     }
+}
+
+.asd {
+@media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+}
