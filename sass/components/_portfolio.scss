@@ -10,8 +10,17 @@
     flex-wrap: wrap;
     justify-content: left;
    
-   
-
+    @media screen and (min-width: 768px) {
+            --items: 2;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            --items: 3;
+            margin-bottom: 50px;
+            justify-content: center;
+        }
 
 }
 
@@ -20,7 +29,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    --items: 9;
+    // --items: 9;
    
     
   
@@ -28,6 +37,16 @@
 
 .portfolio-item:nth-child(-n+3) {
 margin-bottom: 15px;
+
+@media screen and (min-width: 768px) {
+        
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+       
+        margin-bottom: 0;
+    }
 
 }
 
@@ -55,8 +74,14 @@ margin-right: 8px;
     flex-wrap: wrap;
     justify-content: center;
     --items: 1;
-    width: 450px;
+   
+    @media screen and (min-width: 768px) {
+            --items: 2;
+        }
     
+        @media screen and (min-width: 1200px) {
+            --items: 3;
+        }
 
 
     &:hover,
