@@ -168,13 +168,13 @@ img {
   cursor: pointer;
   border: none;
   width: 200px;
-  min-width: 200px;
 }
 @media screen and (min-width: 1200px) {
   .footer-subscribe-btn {
     margin-left: 12px;
     padding-top: 8px;
     padding-bottom: 9px;
+    min-width: 200px;
   }
 }
 .footer-subscribe-btn::after {
@@ -1171,11 +1171,12 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer-subscribe {
     margin-left: 93px;
+    padding-top: 12px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     width: 570px;
-    padding-top: 0;
+    height: 100%;
   }
 }
 
@@ -1205,6 +1206,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .subscribe-input {
+    margin-bottom: 0;
     width: 358px;
   }
 }
@@ -1249,6 +1251,7 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 100%;
   }
 }
 
@@ -1259,7 +1262,6 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .welcome {
-    padding-top: 12px;
     min-width: 206px;
   }
 }

@@ -95,10 +95,10 @@
 
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
-        // padding-top: 8px;
+        padding-top: 12px;
         align-items: flex-start;
         width: 570px;
-        padding-top: 0;
+        height: 100%;
 
     }
 
@@ -125,7 +125,7 @@
     max-width: 450px;}
 
     @media screen and (min-width: 1200px) {
-
+    margin-bottom: 0;
     width: 358px;}
 
 }
@@ -158,5 +158,8 @@
 @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+    height: 100%;
+
+}
 }
