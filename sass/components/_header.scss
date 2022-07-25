@@ -92,7 +92,7 @@ transition: color var(--anim), fill var(--anim);
 
     &:hover,
     &:focus {
-        color: var(--blue-txt-color);
+    color: var(--blue-txt-color);
     }
 
 }
@@ -100,11 +100,17 @@ transition: color var(--anim), fill var(--anim);
 .menu-open {
     display: block;
     margin-left: auto;
-    margin-top: -10px;
+    margin-top: -1px;
+    margin-right: 5px;
+    border: none;
+    background-color: var(--white-bg-color);
+
     &:hover,
     &:focus {
     fill: var(--blue-txt-color);
-    
+    cursor: pointer;
+    transition: fill var(--anim);
+  
     }
     
 }
@@ -147,17 +153,21 @@ transition: color var(--anim), fill var(--anim);
 
 .menu-close {
     position: absolute;
-    top: -38px;
-    right: 15px;
+    top: -28px;
+    
+    border: none;
+    background-color: var(--white-bg-color);
+
 
     &:hover,
     &:focus {
     fill: var(--blue-txt-color);
-    
+    cursor: pointer;
+    transition: fill var(--anim);
     }
 
     @media screen and (min-width: 480px) {
-    right: -10px;
+    right: -4px;
     }
 
 }
@@ -172,8 +182,10 @@ transition: color var(--anim), fill var(--anim);
     text-decoration: none;
 
     &:hover,
-        &:focus {
-            color: var(--blue-txt-color);}
+    &:focus {
+    color: var(--blue-txt-color);
+    transition: color var(--anim);
+        }
 }
 
 .mob-social-link {
@@ -203,6 +215,7 @@ transition: color var(--anim), fill var(--anim);
     &:hover,
     &:focus {
     color: var(--blue-txt-color);
+    transition: color var(--anim);
     }
 
 

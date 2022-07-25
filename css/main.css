@@ -732,10 +732,16 @@ textarea {
 .menu-open {
   display: block;
   margin-left: auto;
-  margin-top: -10px;
+  margin-top: -1px;
+  margin-right: 5px;
+  border: none;
+  background-color: var(--white-bg-color);
 }
 .menu-open:hover, .menu-open:focus {
   fill: var(--blue-txt-color);
+  cursor: pointer;
+  -webkit-transition: fill var(--anim);
+  transition: fill var(--anim);
 }
 
 .mob-menu {
@@ -770,15 +776,19 @@ textarea {
 
 .menu-close {
   position: absolute;
-  top: -38px;
-  right: 15px;
+  top: -28px;
+  border: none;
+  background-color: var(--white-bg-color);
 }
 .menu-close:hover, .menu-close:focus {
   fill: var(--blue-txt-color);
+  cursor: pointer;
+  -webkit-transition: fill var(--anim);
+  transition: fill var(--anim);
 }
 @media screen and (min-width: 480px) {
   .menu-close {
-    right: -10px;
+    right: -4px;
   }
 }
 
@@ -793,6 +803,8 @@ textarea {
 }
 .mob-menu-link:hover, .mob-menu-link:focus {
   color: var(--blue-txt-color);
+  -webkit-transition: color var(--anim);
+  transition: color var(--anim);
 }
 
 .mob-social-link {
@@ -819,6 +831,8 @@ textarea {
 }
 .mob-contacts-link:hover, .mob-contacts-link:focus {
   color: var(--blue-txt-color);
+  -webkit-transition: color var(--anim);
+  transition: color var(--anim);
 }
 
 .mob-menu-item:not(:last-child) {
