@@ -1,16 +1,23 @@
 .modal {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    width: 528px;
+    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
+    
     background-color: var(--white-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding-left: 40px;
     padding-right: 40px;
+    
+    @media screen and (min-width: 480px) {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 40px;}
+    
 
     @media screen and (min-width: 1200px) {
     padding-top: 50px;
@@ -24,9 +31,9 @@
 
 .modal-close {
     position: absolute;
-    top: -9px;
-    right: 24px;
-    transform: translate(-8px, 18px);
+    top: 8px;
+    right: 111px;
+    
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -38,6 +45,12 @@
     cursor: pointer;
     background-color: var(--white-bg-color);
     transition: fill var(--anim);
+
+    @media screen and (min-width: 480px) {
+    transform: translate(-8px, 18px);
+    top: -9px;
+    right: 24px;    
+    }
 
     @media screen and (min-width: 1200px) {
     top: 0;
@@ -77,13 +90,20 @@ textarea {
     }
     
     .form {
-    width: 370px;
+
+    width: 300px;  
     margin-left: auto;
     margin-right: auto;
+    
 
-@media screen and (min-width: 1200px) {
+    @media screen and (min-width: 480px) {
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;}
+
+    @media screen and (min-width: 1200px) {
     width: 448px;
-}
+    }
 
     
     }
@@ -141,6 +161,7 @@ textarea {
     
     .border-check {
        display: inline-block;
+       
     }
 
     
@@ -182,16 +203,24 @@ textarea {
     
 
     .form-label {
+
+
     display: block;
     @include fonts(400, 12px, 1.17, 0.01em);
     color: var(--gray-txt-color);
     
     &-check {
+        
+    @include fonts(400, 12px, 1.17, 0.03em);
+   
+
+    @media screen and (min-width: 480px) {
     @include fonts(400, 12px, 1.17, 0.03em);
     display: flex;
    
     color: var(--gray-txt-color);
-    align-items: center;
+    align-items: center;}
+    
     
 
     @media screen and (min-width: 1200px) {
@@ -225,11 +254,16 @@ textarea {
     }
 
     .policy {
+    
+    
     @include fonts(400, 12px, 1.17, 0.03em);
     text-decoration-line: underline;
     color: var(--blue-txt-color);
     cursor: pointer;
-    margin-left: 3px;
+    margin-left: 85px;
+
+    @media screen and (min-width: 480px) {
+    margin-left: 3px;}
 
     @media screen and (min-width: 1200px) {
     @include fonts(400, 14px, 1.71, 0.03em);
@@ -240,12 +274,17 @@ textarea {
     }
 
     .strong-title {
+    width: 300px;
+    text-align: center;
+    
+    @include fonts(700, 14px, 1.75, 0.03em);
 
+    @media screen and (min-width: 480px) {
     margin-bottom: 12px;
     @include fonts(700, 20px, 1.50, 0.03em);
     width: 370px;
     text-align: center;
-    color: var(--dark-txt-color);
+    color: var(--dark-txt-color);}
    
     @media screen and (min-width: 1200px) {
     @include fonts(700, 20px, 1.15, 0.03em);

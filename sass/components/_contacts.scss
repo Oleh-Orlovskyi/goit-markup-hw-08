@@ -1,9 +1,13 @@
 .contacts {
     color: var(--gray-txt-color);
     
-    @include fonts(500, 14px, 1.14, 0.02em);
+    @include fonts(500, 12px, 1.17, 0.02em);
     text-decoration: none;
     transition: color var(--anim);
+
+    @media screen and (min-width: 1200px) {
+    @include fonts(500, 14px, 1.14, 0.02em);
+    }
 
     &:hover,
     &:focus {
@@ -23,7 +27,6 @@
     fill: var(--blue-fill-color);
     }
 }
-
 
 
 

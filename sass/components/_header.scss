@@ -5,9 +5,22 @@ margin-left: auto;
 
 &-cont {
     display: none;
-align-items: center;
+
+@media screen and (min-width: 768px) {
+display: flex;
+flex-direction: column;
 margin-left: auto;
-padding-left: 0;
+
+
+
+@media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-left: 0;
+    }
+        }
+  
 }
 
 & .item-tel:last-child {
@@ -24,9 +37,13 @@ margin-left: 0;
 
 .page-nav {
 display: none;
+
+@media screen and (min-width: 768px) {
+display: flex;
+   
 padding-left: 0;
 margin-bottom: 0;
-margin-top: 0;
+margin-top: 0; }
 
 & .item:last-child {
 margin-right: 0;
@@ -34,17 +51,27 @@ margin-right: 0;
 
 }
 
-.item {
+.item:not(:last-child) {
 margin-right: 50px;
-
 }
 
+@media screen and (min-width: 1200px) {
+.item {
+margin-right: 50px;
+}
+}
 
 .mail {
 fill: var(--grayeness-fill-color);
 margin-right: 10px;
 margin-bottom: -2px;
 transition: color var(--anim), fill var(--anim);
+
+@media screen and (min-width: 768px) {
+width: 14px;
+height: 10px;
+margin-right: 8px;
+}
 }
 
 .tel {
@@ -54,14 +81,24 @@ margin-right: 10px;
 margin-bottom: -2px;
 transition: color var(--anim), fill var(--anim);
 
+
+@media screen and (min-width: 768px) {
+width: 10px;
+height: 14px;
+margin-right: 8px;
+    
+}
 }
 
 .header-bg {
     background-color: var(--white-bg-color);
     border-bottom: 1px solid #ECECEC;
-    padding-top: 16px;
-    padding-bottom: 16px;
     padding-left: 15px;
+
+    // @media screen and (min-width: 1200px) {
+    //     padding-top: 16px;
+    //         padding-bottom: 16px;
+    //     }
 
 }
 
@@ -72,8 +109,10 @@ transition: color var(--anim), fill var(--anim);
     @include fonts(700, 26px, 1.19, 0.03em);
     text-decoration: none;
     word-spacing: -0.29em;
+    margin-right: 88px;
+    @media screen and (min-width: 1200px) {
     margin-right: 93px;
-
+    }
 }
 
 .logo-header-part-2 {
@@ -112,7 +151,9 @@ transition: color var(--anim), fill var(--anim);
     transition: fill var(--anim);
   
     }
-    
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
 }
 
 .mob-menu {
@@ -155,6 +196,7 @@ transition: color var(--anim), fill var(--anim);
     position: absolute;
     top: -28px;
     right: 0;
+   
     
     border: none;
     background-color: var(--white-bg-color);
