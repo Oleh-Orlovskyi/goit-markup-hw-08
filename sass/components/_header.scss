@@ -154,6 +154,7 @@ transition: color var(--anim), fill var(--anim);
 .menu-close {
     position: absolute;
     top: -28px;
+    right: 0;
     
     border: none;
     background-color: var(--white-bg-color);

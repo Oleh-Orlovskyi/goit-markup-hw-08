@@ -424,14 +424,20 @@ img {
   border-radius: 4px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
 }
 
 .modal-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -9px;
+  right: 24px;
   -webkit-transform: translate(-8px, 18px);
           transform: translate(-8px, 18px);
   width: 30px;
@@ -452,6 +458,12 @@ img {
   background-color: var(--white-bg-color);
   -webkit-transition: fill var(--anim);
   transition: fill var(--anim);
+}
+@media screen and (min-width: 1200px) {
+  .modal-close {
+    top: 0;
+    right: 0;
+  }
 }
 .modal-close:hover, .modal-close:focus {
   fill: var(--blue-fill-color);
@@ -483,9 +495,14 @@ textarea {
 }
 
 .form {
-  width: 448px;
+  width: 370px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 448px;
+  }
 }
 
 .form-fields {
@@ -535,6 +552,10 @@ textarea {
   transition: background-color var(--anim);
 }
 
+.border-check {
+  display: inline-block;
+}
+
 .textarea {
   height: 120px;
   padding: 12px 16px;
@@ -579,8 +600,8 @@ textarea {
 }
 .form-label-check {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -589,6 +610,14 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .form-label-check {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .form-fields input:hover,
@@ -610,8 +639,8 @@ textarea {
 
 .policy {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -619,15 +648,45 @@ textarea {
   cursor: pointer;
   margin-left: 3px;
 }
+@media screen and (min-width: 1200px) {
+  .policy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
 
 .strong-title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
+  width: 370px;
   text-align: center;
   color: var(--dark-txt-color);
+}
+@media screen and (min-width: 1200px) {
+  .strong-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    width: 448px;
+  }
+}
+
+.form-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-nav {
@@ -777,6 +836,7 @@ textarea {
 .menu-close {
   position: absolute;
   top: -28px;
+  right: 0;
   border: none;
   background-color: var(--white-bg-color);
 }

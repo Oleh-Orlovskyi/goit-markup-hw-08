@@ -9,14 +9,23 @@
     border-radius: 4px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 1200px) {
     padding-top: 50px;
     padding-bottom: 30px;
+    
+        }
+
+
+
     }
 
 .modal-close {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -9px;
+    right: 24px;
     transform: translate(-8px, 18px);
     width: 30px;
     height: 30px;
@@ -29,6 +38,11 @@
     cursor: pointer;
     background-color: var(--white-bg-color);
     transition: fill var(--anim);
+
+    @media screen and (min-width: 1200px) {
+    top: 0;
+    right: 0;
+    }
 
     &:hover,
     &:focus {
@@ -63,9 +77,15 @@ textarea {
     }
     
     .form {
-    width: 448px;
+    width: 370px;
     margin-left: auto;
     margin-right: auto;
+
+@media screen and (min-width: 1200px) {
+    width: 448px;
+}
+
+    
     }
     
     .form-fields {
@@ -119,6 +139,10 @@ textarea {
 
     }
     
+    .border-check {
+       display: inline-block;
+    }
+
     
     .textarea {
     height: 120px;
@@ -163,12 +187,21 @@ textarea {
     color: var(--gray-txt-color);
     
     &-check {
-    @include fonts(400, 14px, 1.71, 0.03em);
+    @include fonts(400, 12px, 1.17, 0.03em);
     display: flex;
+   
     color: var(--gray-txt-color);
     align-items: center;
     
+
+    @media screen and (min-width: 1200px) {
+    @include fonts(400, 14px, 1.71, 0.03em);
+    
     }
+
+    
+
+}
     
     }
     
@@ -192,17 +225,35 @@ textarea {
     }
 
     .policy {
-    @include fonts(400, 14px, 1.71, 0.03em);
+    @include fonts(400, 12px, 1.17, 0.03em);
     text-decoration-line: underline;
     color: var(--blue-txt-color);
     cursor: pointer;
     margin-left: 3px;
+
+    @media screen and (min-width: 1200px) {
+    @include fonts(400, 14px, 1.71, 0.03em);
+    
+    }
+
+
     }
 
     .strong-title {
 
     margin-bottom: 12px;
-    @include fonts(700, 20px, 1.15, 0.03em);
+    @include fonts(700, 20px, 1.50, 0.03em);
+    width: 370px;
     text-align: center;
     color: var(--dark-txt-color);
+   
+    @media screen and (min-width: 1200px) {
+    @include fonts(700, 20px, 1.15, 0.03em);
+    width: 448px;}
+}
+
+.form-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
