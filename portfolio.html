@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		<!--Хедер-->
-		<!-- <header class="header-bg">
+		<header class="header-bg">
 			<div class="container header-nav">
 				<a class="logo-header" href="/">
 					Web
@@ -48,8 +48,39 @@
 						</a>
 					</li>
 				</ul>
+				<button type="button" class="menu-open">
+					<svg class="header-burger" width="24" height="16">
+						<use href="./images/icons.svg#icon-menu_burger"></use>
+					</svg>
+				</button>
 			</div>
-		</header> -->
+			<div class="mob-menu is-hidden">
+				<div class="container-menu">
+					<button type="button" class="menu-close">
+						<svg class="header-mob-close" width="19" height="19">
+							<use href="./images/icons.svg#icon-close_24px"></use>
+						</svg>
+					</button>
+					<ul class="mob-menu-list header-mob-list">
+						<li class="mob-menu-item"><a href="./index.html" class="mob-menu-link">Студия</a></li>
+						<li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link">Портфолио</a></li>
+						<li class="mob-menu-item"><a href="" class="mob-menu-link">Контакты</a></li>
+					</ul>
+					<div class="mob-menu-div">
+						<ul class="mob-contacts-list header-mob-list">
+							<li class="mob-contacts-item"><a href="" class="mob-contacts-link">+38 096 111 11 11</a></li>
+							<li class="mob-contacts-item"><a href="" class="mob-contacts-link">info@devstudio.com</a></li>
+						</ul>
+						<ul class="mob-social-list header-mob-list">
+							<li class="mob-social-item"><a href="" class="mob-social-link">Instagram</a></li>
+							<li class="mob-social-item"><a href="" class="mob-social-link">Twitter</a></li>
+							<li class="mob-social-item"><a href="" class="mob-social-link">Facebook</a></li>
+							<li class="mob-social-item"><a href="" class="mob-social-link">LinkedIn</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
 		<!--Main-->
 		<main>
 			<section class="portfolio-btn">
