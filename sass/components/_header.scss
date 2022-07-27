@@ -6,21 +6,22 @@ margin-left: auto;
 &-cont {
     display: none;
 
-@media screen and (min-width: 768px) {
-display: flex;
-flex-direction: column;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+// display: flex;
+// flex-direction: column;
+padding-left: 0;
 margin-left: auto;}
-        
+  
 @media screen and (min-width: 1200px) {
-display: flex;
 align-items: center;
 justify-content: center;
 margin-left: auto;
 padding-left: 0;
-    }
+}
+
 }
   
-}
+} 
 
 
 & .item-tel:last-child {
