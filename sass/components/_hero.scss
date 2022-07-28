@@ -25,8 +25,8 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: auto;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/Hero-S.jpg);
@@ -42,7 +42,7 @@
 
 	@media screen and (min-width: 768px) {
 		    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/hero/Hero-M.jpg);}
+            url(../images/hero/Hero-M.jpg);
 
 		// Для ретіна екранів планшетна версія
 		@media (min-device-pixel-ratio: 2),
@@ -52,11 +52,11 @@
 			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
             url(../images/hero/Hero-M@2x.jpg);
 		}
-	
+    }
 
 	@media screen and (min-width: 1200px) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/hero/Hero-L.jpg);}
+            url(../images/hero/Hero-L.jpg);
 
 		// Для ретіна екранів десктопна версія
 		@media (min-device-pixel-ratio: 2),
@@ -66,10 +66,9 @@
             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/hero/Hero-L@2x.jpg);
 
-            padding-top: 200px;
-            padding-bottom: 200px;
+           
                         
 		}
 	}
 
-    
+}   
