@@ -27,6 +27,7 @@ body {
 }
 body.no-scroll {
   overflow: hidden;
+  visibility: hidden;
 }
 
 .card-set {
